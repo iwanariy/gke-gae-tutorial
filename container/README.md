@@ -10,10 +10,10 @@ go run app.go
 
 ## How to build
 ```go
-docker build --tag iwanariy/goapp .
+docker build --tag iwanariy/sampleapp .
 ```
 
 ## Run as container
 ```go
-docker run -d -p 8080:8080 iwanariy/goapp
+docker run -d -p 8080:8080 iwanariy/sampleapp
 ```
