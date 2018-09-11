@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: blue
+spec:
+  template:
+    metadata:
+      labels:
+        app: blue
+    spec:
+      containers:
+      - name: blue
+        image: iwanariy/sampleapp:blue
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: blue
+spec:
+  type: LoadBalancer
+  selector:
+    app: blue
+  ports:
+  - name: blue
+    port: 8080
+    targetPort: 8080
