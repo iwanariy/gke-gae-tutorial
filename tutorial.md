@@ -4,7 +4,7 @@
 hoge
 
 ## チュートリアルの流れ
-1. GKE
+1. Google Kubernetes Engine
   1. GKE クラスタの作成
   2. アプリケーションのデプロイ
 2. Google App Engine
