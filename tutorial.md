@@ -71,7 +71,7 @@ gcloud app deploy
 
 ## Clean up
 ### GKE  
-```
+```bash
 gcloud container clusters delete cluster-onprem cluster-cloud --zone asia-northeast1-c
 ```
 
