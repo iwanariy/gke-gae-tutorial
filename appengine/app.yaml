@@ -1,6 +1,8 @@
 runtime: go
 api_version: go1
-service: productservice
+
+# 初回デプロイ時は default サービスが必要なため、コメントアウト
+# service: productservice
 
 handlers:
 - url: /.*
