@@ -40,6 +40,10 @@ gcloud container clusters get-credentials cluster-onprem --zone asia-northeast1-
 
 ### デプロイ  
 ```bash
+cd ~/gke-gae-tutorial
+```
+
+```bash
 kubectl apply -f k8s_manifests/userservice.yaml
 ```
 
